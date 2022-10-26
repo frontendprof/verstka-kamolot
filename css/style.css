@@ -152,3 +152,141 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
 }
+
+/* general css */
+.container {
+  padding-inline: 15px;
+}
+
+/* Header */
+
+.header .btn {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  padding-block: 12px;
+  box-shadow: var(--shadow-1);
+  z-index: 4;
+}
+
+.header .active {
+  position: fixed;
+}
+/* 
+.header :is(.logo, .logo-img, .logo-title) {
+  display: inline;
+}
+
+.header .logo-title {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: trnaslate(-45%, -20%);
+} */
+
+.header .container,
+.header-actions,
+.navbar .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-action-btn,
+.nav-close-btn {
+  position: relative;
+  color: var(--eerie-black-1);
+  font-size: 2.4rem;
+  transition: var(--transition-1);
+}
+
+.header-action-btn:is(:hover, :focus) {
+  color: var(--kappel);
+}
+
+.header-action-btn .item-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--kappel);
+  color: var(--white);
+  font-family: var(--ff-league_spartan);
+  font-size: var(--fs-6);
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-circle);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -32rem;
+  max-width: 32rem;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 2;
+  transform: 0.25s --cubic-in;
+}
+
+.navbar.active {
+  transform: translateX(32rem);
+  transition: 0.5s var(--cubic-out);
+}
+
+.navbar .wrapper {
+  padding: 15px 20px;
+  border-block-end: 1px solid var(--platinum);
+}
+
+.nav-close-btn {
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+  padding: 8px;
+  border-radius: var(--radius-circle);
+}
+
+.nav-close-btn:is(:hover, :focus) {
+  background-color: var(--kappel);
+  color: var(--white);
+}
+
+.navbar-list {
+  padding: 15px 20px;
+}
+
+.navbar-item:not(:last-child) {
+  border-block-end: 1px solid var(--platinum);
+}
+
+.navbar-link {
+  padding-block: 8px;
+  font-weight: var(--fw-500);
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) {
+  color: var(--kappel);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--black_80);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
