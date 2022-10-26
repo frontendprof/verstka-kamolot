@@ -131,6 +131,7 @@ body {
   color: var(--gray-web);
   font-size: 1.6rem;
   line-height: 1.75;
+  height: 150vh;
 }
 
 :focus-visible {

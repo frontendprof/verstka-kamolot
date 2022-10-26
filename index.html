@@ -69,7 +69,7 @@
           <span class="logo-title">amolot</span>
         </a>
 
-        <nav class="navbar active">
+        <nav class="navbar">
           <div class="wrapper">
             <a href="#" class="logo">
               <img
@@ -82,7 +82,11 @@
               <!-- <span class="logo-title">Kamolot</span> -->
             </a>
 
-            <button class="nav-close-btn" aria-label="close menu">
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
               <ion-icon name="close" aria-hidden="true"></ion-icon>
             </button>
           </div>
@@ -131,11 +135,15 @@
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
 
-          <button class="header-action-btn" aria-label="open menu">
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
             <ion-icon name="menu" aria-hidden="true"></ion-icon>
           </button>
         </div>
-        <div class="overlay" data-overlay></div>
+        <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
 
