@@ -54,6 +54,13 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/hero-shape-2.png" />
   </head>
   <body>
     <header class="header">
@@ -146,6 +153,74 @@
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
+
+    <main>
+      <article>
+        <!-- hero -->
+        <section
+          class="section hero has-bg-img"
+          id="hero"
+          aria-label="home"
+          style="background-image: url('./assets/hero-bg.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                The Best Program to <span class="span">Enroll</span> for
+                Exchange
+              </h1>
+
+              <p class="hero-text">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                officia deserunt mollit.
+              </p>
+
+              <a href="#" class="btn has-before">
+                <span class="span">Find courses</span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <div class="img-holder one" style="--width: 270; --height: 300">
+                <img
+                  width="270"
+                  height="300"
+                  src="./assets/hero-banner-1.jpg"
+                  alt="a girl listens music while writes"
+                  class="img-cover"
+                />
+              </div>
+
+              <div class="img-holder two" style="--width: 240; --height: 370">
+                <img
+                  width="270"
+                  height="300"
+                  src="./assets/hero-banner-2.jpg"
+                  alt="a guy thinks"
+                  class="img-cover"
+                />
+              </div>
+              <img
+                width="380"
+                height="190"
+                src="./assets/hero-shape-1.svg"
+                alt="online support info"
+                class="shape hero-shape-1"
+              />
+
+              <img
+                width="622"
+                height="551"
+                src="./assets/hero-shape-2.png"
+                alt="online support info"
+                class="shape hero-shape-1"
+              />
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
 
     <script src="app.js"></script>
 
