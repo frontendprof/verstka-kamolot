@@ -365,7 +365,7 @@ body {
   width: 100%;
   background-color: var(--white);
   z-index: 2;
-  transform: 0.25s --cubic-in;
+  transition: 0.25s var(--cubic-in);
 }
 
 .navbar.active {

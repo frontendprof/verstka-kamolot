@@ -13,7 +13,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 // defining vars
 const navbar = document.querySelector('.navbar');
-const navTogglers = document.querySelectorAll('nav-close-btn');
+const navTogglers = document.querySelectorAll('[data-nav-toggler]');
 const navLinks = document.querySelectorAll('.navbar-item');
 const overlay = document.querySelector('.overlay');
 const header = document.querySelector('.header');

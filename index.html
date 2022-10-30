@@ -36,6 +36,7 @@
 
     <!-- my styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- extra meta tags -->
     <meta
@@ -90,7 +91,11 @@
               <!-- <span class="logo-title">Kamolot</span> -->
             </a>
 
-            <button class="nav-close-btn" aria-label="close menu">
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
               <ion-icon name="close" aria-hidden="true"></ion-icon>
             </button>
           </div>
@@ -150,7 +155,7 @@
             <ion-icon name="menu" aria-hidden="true"></ion-icon>
           </button>
         </div>
-        <div class="overlay" data-nav-toggler data-overlay></div>
+        <div class="overlay" data-nav-toggler></div>
       </div>
     </header>
 
@@ -1071,7 +1076,7 @@
     </footer>
 
     <!-- back to top element -->
-    <a href="top" class="back-top-btn" data-back-top-btn>
+    <a href="#top" class="back-top-btn">
       <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
     </a>
 
