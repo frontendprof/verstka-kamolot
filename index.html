@@ -62,7 +62,7 @@
     <link rel="preload" as="image" href="./assets/hero-shape-1.svg" />
     <link rel="preload" as="image" href="./assets/hero-shape-2.png" />
   </head>
-  <body>
+  <body id="top">
     <!-- header section -->
     <header class="header">
       <div class="container">
@@ -90,11 +90,7 @@
               <!-- <span class="logo-title">Kamolot</span> -->
             </a>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
+            <button class="nav-close-btn" aria-label="close menu">
               <ion-icon name="close" aria-hidden="true"></ion-icon>
             </button>
           </div>
@@ -904,10 +900,182 @@
           </div>
         </section>
       </article>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </main>
 
-    <script src="app.js"></script>
+    <footer
+      class="footer"
+      style="background-image: url('/assets/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="/assets/logo-light.svg"
+                alt="kafolat logo"
+                width="162"
+                height="50"
+              />
+            </a>
+
+            <p class="footer-brand-text">
+              Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor
+              incidid unt labore dolore.
+            </p>
+            <div class="wrapper">
+              <span class="span">Addr:</span>
+              <address class="address">3952 West Dakin, Chicago</address>
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Call:</span>
+              <a href="tel:+99899929----" class="footer-link">+99899929----</a>
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+              <a href="mailto:example@mail.uz" class="footer-link"
+                >example@mail.uz</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Online Platform</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Courses</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Instructor</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Events</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Instructor Profile</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Purchase Guide</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">News&Articles</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ's</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Sign In/Sign Up</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Coming Soon</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter
+              subscription
+            </p>
+
+            <form action="#" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-fieald"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; <a href="#" class="copyright-link">frontendprof</a>
+            <span class="year"></span> All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top element -->
+    <a href="top" class="back-top-btn" data-back-top-btn>
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script src="js/app.js"></script>
 
     <!-- 
     - ionicon link
