@@ -285,7 +285,7 @@ body {
   background-color: hsla(var(--color), 0.1);
 }
 
-/* Header */
+/* Header section */
 
 .header .btn {
   display: none;
@@ -502,4 +502,70 @@ body {
   margin-inline: auto;
   padding: 2px 18px;
   max-width: max-content;
+}
+
+/* about section */
+.about {
+  padding-block-start: 0;
+}
+
+.about .container {
+  display: grid;
+  gap: 30px;
+}
+
+.about-banner {
+  position: relative;
+  z-index: 1;
+}
+
+.about-banner .img-holder {
+  border-radius: var(--radius-10);
+}
+
+.about-shape-2 {
+  display: block;
+  bottom: -100px;
+  left: -60px;
+  animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.about :is(.section-subtitle, .section-title, .section-text) {
+  text-align: left;
+}
+
+.about-item {
+  margin-block: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-item ion-icon {
+  color: var(--selective-yellow);
+  font-size: 20px;
+  --ionicon-stroke-width: 50px;
+}
+
+.about-item .span {
+  color: var(--eerie-black-1);
+  font-family: var(--ff-league_spartan);
 }
